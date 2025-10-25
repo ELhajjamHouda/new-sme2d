@@ -1,0 +1,40 @@
+/* Breadcrumb.scss */
+.breadcumb-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 385px;
+    height: calc(100% + 120px);
+    background: $theme-color;
+    opacity: 0.26;
+    transform: skew(-31deg, 0deg);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      #171717 0.03%,
+      rgba(165, 14, 14, 0) 99.95%
+    );
+    z-index: 2;
+  }
+
+  .breadcumb-content {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+  }
+}

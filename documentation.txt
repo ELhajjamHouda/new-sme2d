@@ -1,0 +1,54 @@
+
+Project: sme2d
+Description: This is a Next.js project bootstrapped with create-next-app.
+
+## Project Structure
+
+- **/.next**: Contains the compiled and optimized build output of the Next.js application. This directory is automatically generated when you run the build command.
+- **/node_modules**: Stores all the project's external dependencies and packages.
+- **/public**: This directory is used for serving static assets like images, fonts, and other files that don't need to be processed by the build pipeline.
+- **/src**: Holds the main source code of the application, including components, pages, styles, and utility functions.
+- **.gitignore**: A configuration file for the Git version control system, specifying which files and directories should be ignored.
+- **jsconfig.json**: A configuration file that helps improve the development experience in code editors like Visual Studio Code by providing settings for JavaScript projects.
+- **next.config.js**: The configuration file for Next.js, where you can customize its behavior, such as setting up redirects, defining environment variables, and more.
+- **package-lock.json**: Automatically generated for any operations where npm modifies either the node_modules tree or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+- **package.json**: The manifest file for the project, containing metadata such as the project's name, version, dependencies, and scripts.
+- **README.md**: A markdown file that provides an overview of the project, including instructions on how to set it up and run it.
+
+## Technologies Used
+
+- **Framework**: Next.js (a popular React framework for building server-rendered and statically generated web applications)
+- **Programming Language**: JavaScript
+- **Styling**:
+  - **Bootstrap**: A widely-used CSS framework for creating responsive and mobile-first websites.
+  - **Sass**: A CSS preprocessor that adds features like variables, mixins, and functions to CSS.
+  - **Animate.css**: A library of ready-to-use, cross-browser animations.
+- **UI/UX Libraries**:
+  - **Font Awesome**: A comprehensive library of icons.
+  - **@ramonak/react-progress-bar**: A flexible progress bar component for React.
+  - **AOS (Animate On Scroll)**: A library for animating elements as you scroll down the page.
+  - **imagesloaded**: A JavaScript library to detect when images have been loaded.
+  - **Isotope**: A library for creating intelligent, dynamic layouts, including masonry-style grids.
+  - **rc-slider**: A slider component for React.
+  - **React CountUp**: A React component for animating numerical data.
+  - **React Fast Marquee**: A lightweight React component to create marquee animations.
+  - **React Modal Image**: A simple and customizable modal for displaying images.
+  - **React on Screen**: A React component to track the visibility of elements on the screen.
+  - **React Range**: A customizable range input component for React.
+  - **React Scroll To Top**: A button component that scrolls the page to the top.
+  - **React Visibility Sensor**: A component that informs you when an element enters or leaves the viewport.
+  - **Swiper**: A modern, mobile-friendly touch slider.
+
+## How to Run the Project
+
+1. **Install Dependencies**: Open a terminal in the project's root directory and run the following command to install all the required packages:
+   ```bash
+   npm install
+   ```
+
+2. **Run the Development Server**: After the installation is complete, start the development server with this command:
+   ```bash
+   npm run dev
+   ```
+
+3. **View the Application**: Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application in action. Any changes you make to the source code will be automatically reflected in the browser.

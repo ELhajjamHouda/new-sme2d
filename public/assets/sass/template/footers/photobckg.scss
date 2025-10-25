@@ -1,0 +1,59 @@
+/* Fichier : public/assets/sass/footers/_subscribe.scss */
+
+// Les styles de base pour le conteneur du pied de page
+.footer-top-1 {
+    background-image: url("/assets/img/bg/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 75px;
+    border-radius: 5px;
+    margin-bottom: -115px;
+    z-index: 3;
+    gap: 40px;
+
+    // Annule la superposition de couleur si elle existe
+    &::before {
+        content: none !important; 
+    }
+}
+
+// Styles pour l'effet de verre dépoli
+.glassmorphism {
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 3;
+}
+
+// Styles pour les enfants du conteneur en verre
+.footer-top-1 .footer-logo,
+.footer-top-1 .call-media-wrap,
+.footer-top-1 .social-btn {
+    position: relative;
+    z-index: 2;
+    background-color: transparent; // Les enfants n'ont pas de fond
+    box-shadow: none; // Pas d'ombre non plus
+    
+    // Ajoutez un padding si vous le souhaitez pour espacer le contenu du bord du conteneur en verre
+    padding: 10px; 
+}
+
+// Ajustement des icônes
+.footer-top-1 .social-btn {
+    display: flex;
+    gap: 15px;
+    a {
+        color: white;
+    }
+}
