@@ -110,7 +110,7 @@ const HeaderOne = () => {
         <div className="menu-area">
           <div className="header-navbar-logo">
             <Link href="/">
-              <img src="assets/img/logo.png" alt="sme2d" />
+              <img src="assets/img/logo.svg" alt="sme2d" />
             </Link>
           </div>
           <div className="container">
@@ -118,7 +118,7 @@ const HeaderOne = () => {
               <div className="col-auto d-xl-none d-block">
                 <div className="header-logo">
                   <Link href="/">
-                    <img src="assets/img/logo.png" alt="sme2d" />
+                    <img src="assets/img/logo.svg" alt="sme2d" />
                   </Link>
                 </div>
               </div>
@@ -147,8 +147,8 @@ const HeaderOne = () => {
                       <Link href="/service">Nos services</Link>
                       <ul className="sub-menu">
                         {/* ✅ الروابط الفرعية تستعمل isActive أيضاً */}
-                        <li className={isActive("/epuration-des-eaux-usees")}>
-                          <Link href="/epuration-des-eaux-usees">Épuration Des Eaux Usées</Link>
+                        <li className={isActive("/epuration-des-eaux-Usees")}>
+                          <Link href="/epuration-des-eaux-Usees">Épuration Des Eaux Usées</Link>
                         </li>
                         <li className={isActive("/relevage-et-pompage-des-eaux")}>
                           <Link href="/relevage-et-pompage-des-eaux">Relevage et Pompage des Eaux</Link>
@@ -237,8 +237,8 @@ const HeaderOne = () => {
               }`}>
                 <Link href="/service">Nos services</Link>
                 <ul className="sub-menu">
-                  <li className={isActive("/epuration-des-eaux-usees")}>
-                    <Link href="/epuration-des-eaux-usees">Épuration Des Eaux Usées</Link>
+                  <li className={isActive("/epuration-des-eaux-Usees")}>
+                    <Link href="/epuration-des-eaux-Usees">Épuration Des Eaux Usées</Link>
                   </li>
                   <li className={isActive("/relevage-et-pompage-des-eaux")}>
                     <Link href="/relevage-et-pompage-des-eaux">Relevage et Pompage des Eaux</Link>
