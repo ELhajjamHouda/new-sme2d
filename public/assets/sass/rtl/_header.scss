@@ -2,12 +2,14 @@
     margin: 0 0 0 35px;
 }
 .header-links li > i {
+    text-decoration: none;
     margin-left: 10px;
     margin-right: 0;
 }
 .main-menu > ul >li:first-child {
+    text-decoration: none;
     margin-right: 0 !important;
-    margin-left: 11px !important;
+    margin-left: 110px !important;
 }
 .main-menu > ul > li:last-child {
     margin-right: 11px !important;
@@ -63,7 +65,8 @@
         a {
             color: $title-color;
             &:hover {
-                color: $theme-color;
+                text-decoration: none;
+                // color: $theme-color;
             }
         }
     }

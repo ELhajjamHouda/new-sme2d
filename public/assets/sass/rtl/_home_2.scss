@@ -1,6 +1,6 @@
 .hero-2 {
     &:after {
-        background: linear-gradient(-90deg, #000000 0.03%, rgba(23, 23, 23, 0.00) 99.95%);
+        background: linear-gradient(-90deg, hsl(0, 0%, 0%) 0.03%, rgba(23, 23, 23, 0.00) 99.95%);
     }
     .hero-shape2-1 {
         left: 0;

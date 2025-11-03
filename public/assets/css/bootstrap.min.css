@@ -7228,7 +7228,7 @@ fieldset:disabled .btn {
   margin-left: 3rem !important;
 }
 .ms-auto {
-  margin-left: auto !important;
+  margin-left: auto ;
 }
 .p-0 {
   padding: 0 !important;

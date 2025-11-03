@@ -43,31 +43,21 @@
       color: $title-color;
     }
 
-    /* ===== Effet underline au hover ===== */
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: $theme-color;
-      transition: all 0.3s ease;
-    }
-
-    &:hover::after {
-      width: 100%;
-    }
   }
 
   /* ===== underline ديال الصفحة الحالية (القوائم الرئيسية) ===== */
   > ul > li.active-link > a {
-    color: $theme-color;
+    color: #3EA5D0;
+  }
+  
+  /* Default home page link should be blue when on home page */
+  > ul > li:first-child.active-link > a {
+    color: #3EA5D0;
   }
 
-  > ul > li.active-link > a::after {
-    width: 100%;
-  }
+  // > ul > li.active-link > a::after {
+  //   width: 100%;
+  // }
 }
 
   > ul {
@@ -215,12 +205,10 @@
 
     &:hover {
       color: #3EA5D0; // hover
-      text-decoration: underline;
     }
 
     &.active-link { // الصفحة الحالية
       color: #3EA5D0;
-      text-decoration: underline;
     }
   }
   > ul {
@@ -229,11 +217,10 @@
       > a {
         padding: 31.5px 0;
         &.active {
-          color: $theme-color;
+          color: #3EA5D0;
         }
         &:hover {
           color: #3EA5D0;
-          text-decoration: underline; // إذا بغيت تسطر عليه
         }
       }
     }
@@ -334,7 +321,6 @@
       // ✅✅✅ هذا هو التصحيح اللي كيخلي الرابط الفرعي نشط ومسطر باللون الأزرق
       &.active-link > a { 
         color: #3EA5D0; 
-        text-decoration: underline; 
         padding-left: 15px; 
 
         &:before {
@@ -364,7 +350,7 @@
         padding-left: 0px;
         text-transform: capitalize;
         &.active {
-          color: $theme-color;
+          color: #3EA5D0;
         }
 
         &:before {
@@ -609,7 +595,7 @@
   .navbar-right-desc {
       display: flex;
       align-items: center;   // العناصر كيبقاو فوسط عمودياً
-      gap: 15px;
+      // gap: 15px;
       flex-wrap: nowrap;     // ❌ ما تخليش العناصر يهبطو لسطر آخر
       white-space: nowrap;   // 👈 باش النمرة ما تتقطعش
       padding-right: 46px;
@@ -669,7 +655,7 @@
     top: 0;
   }
   .header-layout1 .header-navbar-logo {
-    // margin-top: 3px;
+    margin-top: 3px;
   }
   .header-layout1 .sticky-wrapper.sticky .header-navbar-logo {
     margin-top: 15px;
@@ -685,7 +671,7 @@
 }
 @include xl {
   .header-layout1 .menu-area .main-menu {
-    padding-left: 23px;
+    padding-left: 83px;
   }
   .header-layout1 .menu-area .logo-bg {
     width: 20%;

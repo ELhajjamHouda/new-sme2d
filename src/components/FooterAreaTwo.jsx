@@ -5,15 +5,11 @@ const FooterAreaTwo = () => {
 <footer
   className="footer-wrapper footer-layout2"
   style={{
-    background: `
-      linear-gradient(to bottom, #e6f0ff, #3EA5D0),
-      url('/assets/img/bg/footer-top-bg1-1.png') no-repeat center top
-    `,
-    backgroundSize: "cover", 
+    background: "#3EA5D0",  // fond bleu uni
   }}
 >
       <div className="container">
-        <div className="widget-area">
+        {/* <div className="widget-area"> */}
           <div className="row justify-content-between">
             <div className="col-md-6 col-xl-3">
               <div className="widget footer-widget widget-about">
@@ -120,7 +116,7 @@ const FooterAreaTwo = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
       <div className="copyright-wrap">
         <div className="container">

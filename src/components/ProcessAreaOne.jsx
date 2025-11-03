@@ -8,12 +8,12 @@ const ProcessAreaOne = () => {
       <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
         <img
           className="about1-shape-img-1 spin"
-          src="/assets/img/normal/Logo_sme2d.jpeg"
+          src="/assets/img/normal/Logo_sme2d-1.png"
           alt="sme2d"
         />
         <img
           className="about1-shape-img-2 spin2"
-          src="/assets/img/normal/Logo_sme2d.jpeg"
+          src="/assets/img/normal/Logo_sme2d-1.png"
           alt="sme2d"
         />
       </div>
@@ -23,8 +23,8 @@ const ProcessAreaOne = () => {
           <div className="col-lg-6">
             <div className="title-area text-center">
               <span className="sub-title">Notre processus de travail</span>
-              <h2 className="sec-title">
-                Atteignez vos objectifs en 4 étapes
+              <h2 class="gradient-text">
+                Achieve your goals in 4 steps
               </h2>
             </div>
           </div>
