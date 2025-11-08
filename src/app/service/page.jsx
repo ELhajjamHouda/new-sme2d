@@ -19,7 +19,7 @@ const page = () => {
       {/* Breadcrumb */}
       <Breadcrumb
        title="Service"
-       imageHeader="/assets/img/hero/1920px900px.png"
+       imageHeader="/assets/img/hero/hero-service.png"
       //  imageHeader="/assets/img/hero/about.png"
       />
 
