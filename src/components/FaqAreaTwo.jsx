@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const FaqAreaTwo = () => {
   return (
-    <section className="faq-area-2 space-bottom ">
+    <section className="faq-area-2 space-bottom space ">
       <div className="container">
         <div className="row gx-60 flex-row-reverse">
           <div className="col-xl-6">

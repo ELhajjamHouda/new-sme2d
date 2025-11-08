@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       {/* Preloader */}
-      <Preloader />
+      {/* <Preloader /> */}
 
       {/* Breadcrumb */}
       <Breadcrumb
