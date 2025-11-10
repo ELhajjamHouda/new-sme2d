@@ -5,7 +5,7 @@ const FooterAreaTwo = () => {
 <footer
   className="footer-wrapper footer-layout2"
   style={{
-    background: "#3EA5D0",  // fond bleu uni
+    background: "#3EA5D0",  
   }}
 >
       <div className="container">
@@ -25,7 +25,7 @@ const FooterAreaTwo = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <Link href="/page">Accueil</Link>
+                      <Link href="/">Accueil</Link>
                     </li>
                     <li>
                       <Link href="/about">À propos de nous</Link>
@@ -81,7 +81,8 @@ const FooterAreaTwo = () => {
                     <div className="contact-grid-details">
                       <p>Address</p>
                       <h6>
-                        Mohammedia
+                        80 lotiss Al Amane , <br></br>
+                        El Alia - Mohammedia
                         <p />
                       </h6>
                     </div>
