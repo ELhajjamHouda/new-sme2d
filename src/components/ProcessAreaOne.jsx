@@ -6,7 +6,7 @@ const ProcessAreaOne = () => {
   return (
     <section className="process-area-1 space position-relative">
       <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
-        <img
+        {/* <img
           className="about1-shape-img-1 spin"
           src="/assets/img/normal/Logo_sme2d-1.png"
           alt="sme2d"
@@ -15,7 +15,7 @@ const ProcessAreaOne = () => {
           className="about1-shape-img-2 spin2"
           src="/assets/img/normal/Logo_sme2d-1.png"
           alt="sme2d"
-        />
+        /> */}
       </div>
 
       <div className="container">

@@ -12,6 +12,11 @@
   overflow: hidden;
 
   &:before {
+<<<<<<< HEAD
+=======
+    content: "";
+    position: absolute;
+>>>>>>> bb1fd10ec6cb321a2b33d2361b1f76db3025ff2c
     background: $theme-color;
     opacity: 0.26;
     width: 385px;
@@ -71,6 +76,56 @@
       bottom: 40px;
       left: 175px;
       transform: skew(-31deg, 0deg);
+    }
+  }
+
+  .hero-shape2-111 {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      height: calc(100% + 160px);
+      width: 445px;
+      background: linear-gradient(
+        180deg,
+        #00A4D9 0%,
+        rgba(0, 164, 217, 0) 100%
+      );
+      opacity: 0.75;
+      transform: skew(30deg, 0deg);
+      top: -160px;
+      left: 326px;
+      z-index: 1;
+    }
+    
+    &:before {
+      content: "";
+      position: absolute;
+      background: #00A4D9;
+      opacity: 0.26;
+      width: 385px;
+      height: calc(100% + 120px);
+      left: 0px;
+      transform: skew(-31deg, 0deg);
+      z-index: 1;
+    }
+    
+    .hero-shape2-122 {
+      position: absolute;
+      width: 300px;
+      height: 279px;
+      background: linear-gradient(180deg, #00A4D9 0%, rgba(0, 164, 217, 0) 100%);
+      opacity: 0.76;
+      bottom: 40px;
+      left: 175px;
+      transform: skew(-31deg, 0deg);
+      z-index: 1;
     }
   }
 

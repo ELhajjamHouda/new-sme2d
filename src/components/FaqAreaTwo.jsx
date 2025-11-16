@@ -1,5 +1,3 @@
-
-
 import CountUp from "react-countup";
 
 const FaqAreaTwo = () => {
