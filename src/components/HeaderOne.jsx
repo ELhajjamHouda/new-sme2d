@@ -126,15 +126,12 @@ const HeaderOne = () => {
               <div className="col-auto">
                 <nav className="main-menu d-none d-lg-inline-block">
                   <ul>
-                    {/* ✅ استخدام isActive لجميع الروابط */}
                     <li className={isActive("/")}>
                       <Link href="/">Accueil</Link>
                     </li>
                     <li className={isActive("/about")}>
                       <Link href="/about">À propos de nous</Link>
                     </li>
-                    
-                    {/* ✅ الرابط الأبوي: نستخدم || (OR) للتأكد من أنه نشط إذا كانت أي صفحة فرعية نشطة */}
                     <li className={`menu-item-has-children ${
                         isActive("/service") || 
                         isActive("/epuration-des-eaux-usees") || 
@@ -146,7 +143,6 @@ const HeaderOne = () => {
                     }`}>
                       <Link href="/service">Nos services</Link>
                       <ul className="sub-menu">
-                        {/* ✅ الروابط الفرعية تستعمل isActive أيضاً */}
                         <li className={isActive("/epuration-des-eaux-Usees")}>
                           <Link href="/epuration-des-eaux-Usees">Épuration Des Eaux Usées</Link>
                         </li>
@@ -205,68 +201,62 @@ const HeaderOne = () => {
           </div>
         </div>
       </div>
-
-      {/* MOBILE MENU */}
-      <div className={`mobile-menu-wrapper ${active ? "body-visible" : ""}`}>
-        <div className="mobile-menu-area">
-          <div className="mobile-logo">
-            <Link href="/">
-              <img src="assets/img/logo.png" alt="sme2d" />
-            </Link>
-            <button className="menu-toggle" onClick={mobileMenu}>
-              <i className="fa fa-times" />
-            </button>
-          </div>
-
-          <div className="mobile-menu">
-            <ul id="offcanvas-navigation">
-              <li className={isActive("/")}>
-                <Link href="/">Accueil</Link>
-              </li>
-              <li className={isActive("/about")}>
-                <Link href="/about">À propos de nous</Link>
-              </li>
-              <li className={`menu-item-has-children ${
-                  isActive("/service") || 
-                  isActive("/epuration-des-eaux-usees") || 
-                  isActive("/relevage-et-pompage-des-eaux") || 
-                  isActive("/traitement-de-l-air") || 
-                  isActive("/electricite-et-automatisme") || 
-                  isActive("/service-apres-vente-et-exploitation") || 
-                  isActive("/bureau-d-etudes-integre")
-              }`}>
-                <Link href="/service">Nos services</Link>
-                <ul className="sub-menu">
-                  <li className={isActive("/epuration-des-eaux-Usees")}>
-                    <Link href="/epuration-des-eaux-Usees">Épuration Des Eaux Usées</Link>
-                  </li>
-                  <li className={isActive("/relevage-et-pompage-des-eaux")}>
-                    <Link href="/relevage-et-pompage-des-eaux">Relevage et Pompage des Eaux</Link>
-                  </li>
-                  <li className={isActive("/traitement-de-l-air")}>
-                    <Link href="/traitement-de-l-air">Traitement de l'air</Link>
-                  </li>
-                  <li className={isActive("/electricite-et-automatisme")}>
-                    <Link href="/electricite-et-automatisme">Électricité et Automatisme</Link>
-                  </li>
-                  <li className={isActive("/service-apres-vente-et-exploitation")}>
-                    <Link href="/service-apres-vente-et-exploitation">Service après-vente et exploitation</Link>
-                  </li>
-                  <li className={isActive("/bureau-d-etudes-integre")}>
-                    <Link href="/bureau-d-etudes-integre">Bureau d’études intégré</Link>
-                  </li>
-                </ul>
-              </li>
-              <li className={isActive("/project")}>
-                <Link href="/project">Projects</Link>
-              </li>
-              <li className={isActive("/contact")}>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
+      {/* MOBILE MENU OVERLAY 1 */}
+    <div className={`mobile-menu-wrapper-1 ${active ? "active" : ""}`}>
+      <div className="mobile-menu-area">
+        <div className="mobile-menu-header">
+          <Link href="/">
+            <img src="assets/img/logo.svg" alt="sme2d" />
+          </Link>
+          <button className="menu-close" onClick={mobileMenu}>
+            <i className="fas fa-times"></i>
+          </button>
         </div>
-      </div>
+
+        <nav id="offcanvas-navigation-1" className="mobile-nav">
+      <ul>
+        <li className={isActive("/")}>
+          <Link href="/" onClick={mobileMenu}>Accueil</Link>
+        </li>
+        <li className={isActive("/about")}>
+          <Link href="/about" onClick={mobileMenu}>À propos de nous</Link>
+        </li>
+<li className={`menu-item-has-children ${isActive("/service")}`}>
+  <Link href="/service" onClick={mobileMenu}>Nos services</Link>
+  <ul className="sub-menu">
+    <li className={isActive("/epuration-des-eaux-Usees")}>
+      <Link href="/epuration-des-eaux-Usees" onClick={mobileMenu}>Épuration Des Eaux Usées</Link>
+    </li>
+    <li className={isActive("/relevage-et-pompage-des-eaux")}>
+      <Link href="/relevage-et-pompage-des-eaux" onClick={mobileMenu}>Relevage et Pompage des Eaux</Link>
+    </li>
+    <li className={isActive("/traitement-de-l-air")}>
+      <Link href="/traitement-de-l-air" onClick={mobileMenu}>Traitement de l'air</Link>
+    </li>
+    <li className={isActive("/electricite-et-automatisme")}>
+      <Link href="/electricite-et-automatisme" onClick={mobileMenu}>Électricité et Automatisme</Link>
+    </li>
+    <li className={isActive("/service-apres-vente-et-exploitation")}>
+      <Link href="/service-apres-vente-et-exploitation" onClick={mobileMenu}>Service après-vente et exploitation</Link>
+    </li>
+    <li className={isActive("/bureau-d-etudes-integre")}>
+      <Link href="/bureau-d-etudes-integre" onClick={mobileMenu}>Bureau d’études intégré</Link>
+    </li>
+  </ul>
+</li>
+
+        <li className={isActive("/project")}>
+          <Link href="/project" onClick={mobileMenu}>Projects</Link>
+        </li>
+        <li className={isActive("/contact")}>
+          <Link href="/contact" onClick={mobileMenu}>Contact</Link>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      
     </header>
   );
 };
