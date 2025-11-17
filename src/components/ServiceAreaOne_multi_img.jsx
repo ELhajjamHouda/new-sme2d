@@ -19,7 +19,7 @@ const ServiceAreaOne_multi_img = () => {
                 </div>
                 */}
                 <h4 className="service-card_title h5">
-                  <Link href="/epuration-des-eaux-usees">Épuration Des Eaux Usées</Link>
+                  <Link href="/epuration-des-eaux-Usees">Épuration Des Eaux Usées</Link>
                 </h4>
                 {/*
                 <p className="service-card_text">
@@ -27,7 +27,7 @@ const ServiceAreaOne_multi_img = () => {
                   damages with your{" "}
                 </p>
                 */}
-                <Link href="/epuration-des-eaux-usees" className="link-btn">
+                <Link href="/epuration-des-eaux-Usees" className="link-btn">
                   En savoir plus <i className="fas fa-arrow-right" />
                 </Link>
               </div>
