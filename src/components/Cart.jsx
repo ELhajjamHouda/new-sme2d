@@ -154,6 +154,33 @@ const Cart = () => {
       status: "active",
       link: "#",  
     }, 
+     {
+      id: 17,
+      name: "Marchica",
+      top: "13%",
+      left: "70%",
+      color: "#28a745",
+      status: "active",
+      link: "#",  
+    }, 
+     {
+      id: 18,
+      name: "Laaouamera",
+      top: "30%",
+      left: "56%",
+      color: "#28a745",
+      status: "active",
+      link: "#",  
+    }, 
+     {
+      id: 19,
+      name: "Souk L'quolla",
+      top: "13%",
+      left: "62%",
+      color: "#fffff",
+      status: "active",
+      link: "#",  
+    }, 
   ];
 
   const getStatusColor = (status) => {
